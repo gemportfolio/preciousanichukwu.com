@@ -1,0 +1,87 @@
+.nav-link-btn {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--col2);
+    color: var(--col3);
+    border: solid 1px var(--col2);
+    border-radius: 3px;
+    padding: 8px 12px;
+    font-family: var(--font1);
+	font-size: 16px;
+	margin-right: 15px;
+    width: max-content;
+    transition: 0.5s;
+}
+
+.nav-link-btn:hover {
+    background-color: var(--col1);
+    color: var(--col2);
+    transition: 0.5s;
+}
+
+.hero-btn {
+    display: flex;
+    background-color: var(--col1);
+    color: var(--col2);
+    border-radius: 3px;
+    padding: 8px 18px;
+    font-family: var(--font1);
+    font-size: 18px;
+    width: max-content;
+    transition: 0.5s;
+}
+
+.hero-btn:hover {
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.btn--2 {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--col2);
+    color: var(--col3);
+    border-radius: 3px;
+    padding: 8px 18px;
+    font-family: var(--font1);
+    font-size: 18px;
+    width: max-content;
+    transition: 0.5s;
+}
+
+.btn--2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.24);
+    transition: 0.5s;
+}
+
+.btn--2.btn--2-white {
+    background-color: var(--col5);
+    color: var(--col2);
+    /* padding: 5px 16px; */
+    border: solid 2px var(--col3);
+}
+
+.btn--2.btn--2-white:hover {
+    box-shadow: none;
+    background-color: var(--col2);
+    color: var(--col1);
+    border-color: var(--col1);
+}
+
+
+/* Lazy Loading Effects */
+
+.hero-btn,
+.btn--2,
+.wa-qc {
+    opacity: 0;
+    transform: translateX(25px); 
+    transition: transform 0.42s ease-out, opacity 0.35s ease-out;
+}
+
+.hero-btn.visible,
+.btn--2.visible,
+.wa-qc.visible {
+    opacity: 1;
+    transform: translateX(0);
+}

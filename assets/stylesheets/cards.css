@@ -1,0 +1,79 @@
+/* Service Cards */
+
+.card-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	background-color: var(--col3);
+	border-radius: 7px;
+    margin: 0 16px 32px 16px;
+	padding: 24px;
+	text-align: center;
+    width: 280px;
+    transition-duration: 0.2s;
+}
+
+.card-service h3 {
+    color: var(--col2);
+}
+
+.card-service i {
+    color: var(--col2);
+    font-size: 50px;
+}
+
+.card-service:hover {
+    margin: -7px 16px 39px 16px;
+	transition-duration: 0.2s;
+}
+
+@media screen and (min-width: 575px) and (max-width: 767px) {
+    .card-service {
+        width: 240px;
+    }
+}
+
+/* Testimonial Cards */
+
+.card-testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	background-color: var(--col3);
+	border-radius: 3px;
+    box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.096);
+	padding: 27px 24px 12px 24px;
+	text-align: center;
+    width: 400px;
+    margin: 28px;
+}
+
+.card-testimonial img {
+    width: 54px;
+    height: auto;
+    border: solid 2px var(--col2);
+    background-color: var(--col1);
+}
+
+@media screen and (max-width: 400px) {
+	.card-testimonial {
+		width: 93%;
+	}
+}
+
+
+/* Lazy Loading Effects */
+
+.card-service,
+.card-testimonial {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: transform 0.35s ease-out, opacity 0.35s ease-out;
+}
+
+.card-service.visible,
+.card-testimonial.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
