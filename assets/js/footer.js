@@ -4,9 +4,9 @@ footer.innerHTML = `
     <div class="container">
         <div class="row pb-3">
             <div class="col-lg-5 col-md-12 text">
-                <a class="fs-3 name" href="https://gemportfolio.github.io/affiliatedafisi">
+                <h3 class="fs-3 name">
                     Precious Anichukwu
-                </a>
+                </h3>
                 <p>
                     I help business owners and personal brands attract clients, build authority, and sell with confidence through strategic content writing, persuasive copy, and brand storytelling.
                 </p>
@@ -52,7 +52,7 @@ footer.innerHTML = `
     <hr class="mx-auto" />
     <div class="text-center copyright pt-2">
         © Copyright 2025,
-        <a href="https://gemportfolio.github.io/affiliatedafisi" class="link"
+        <a href="https://gemportfolio.github.io/preciousanichukwu.com" class="link"
             >Precious Anichukwu</a
         >
     </div>
