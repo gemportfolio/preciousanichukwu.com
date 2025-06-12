@@ -2,7 +2,7 @@ const nav = document.querySelector(".navbar");
 
 nav.innerHTML = `
 	<div class="container py-2">
-		<a class="navbar-brand" href="https://gemportfolio.github.io/affiliatedafisi">
+		<a class="navbar-brand" href="https://gemportfolio.github.io/preciousanichukwu.com">
 			<!--span><img src="./assets/img/logo.png"></span-->
 			Precious Anichukwu
 		</a>
